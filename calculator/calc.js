@@ -2,6 +2,8 @@
 const buttons=document.querySelectorAll('button');
 const display=document.querySelectorAll('.display');
 
+
+
 //add event listeners
 buttons.forEach(
     function (button){
@@ -13,7 +15,6 @@ buttons.forEach(
 function calculate(event){
     //what btn was clicked?
     const clickedValue = event.target.value;
-
     //check if equals
     if(clickedValue === "=") {
         //check if empty
@@ -21,13 +22,10 @@ function calculate(event){
             //evaluate
             display.value = eval(display.value);
         }
-    }
-    //check clear
-    else if (clickedValue === "C"){
+    } else if (clickedValue === "C"){
         //clear
         display.value="";
-    }
-    else{
+    } else{
         //Concatenate clicked value to display
         display.value += clickedValue;
     }
