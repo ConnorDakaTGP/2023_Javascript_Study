@@ -1,6 +1,6 @@
 //setup access to HTML Elements
 const buttons=document.querySelectorAll('button');
-const display=document.querySelectorAll('.display');
+const display=document.querySelector('.display');
 
 
 
